@@ -50,7 +50,7 @@ if __name__ == "__main__":
 
     # 使用私钥对消息签名
     signature = sign_message(private_key, text4)
-    print(f"签名结果: {signature.hex()[:60]}...")  # 只显示部分签名
+    print(f"签名结果: {signature.hex()}")
 
     # 使用公钥验证签名
     valid = verify_signature(public_key, text4, signature)
